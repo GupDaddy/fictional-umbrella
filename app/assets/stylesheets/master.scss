@@ -22,6 +22,12 @@ body {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 }
 
+.navbar-inverse .navbar-brand {
+  color: #E3E85A;
+  font-family: 'sinkin_sans300_light', sans-serif;
+  font-size:26px;
+}
+
 .navbar {
   background: image_url('tactile_noise.png');
   box-shadow: 10px 10px 5px #2a2a2a;
