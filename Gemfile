@@ -64,6 +64,9 @@ gem 'jquery-rails'
 gem 'popper_js', '>= 1.14.3'
 gem 'bootstrap', '>= 4.3.1'
 
+## Gemfile for simple form
+gem 'simple_form'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
