@@ -73,3 +73,6 @@ end
 
 ## Gemfile for Rails 3+, Sinatra, and Merb
 gem 'will_paginate', '> 3.0'
+
+# font awesone
+gem 'font-awesome-rails'
