@@ -77,3 +77,5 @@ gem 'will_paginate', '> 3.0'
 # font awesone
 gem 'font-awesome-rails'
 gem 'devise'
+gem 'geocoder'
+gem 'figaro'
