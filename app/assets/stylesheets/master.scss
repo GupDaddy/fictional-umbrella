@@ -112,3 +112,8 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+
+.image.size {
+  max-width: 200px;
+  max-height: 100px;
+}
