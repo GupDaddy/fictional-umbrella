@@ -37,20 +37,16 @@
 	<div class="clear"></div>
 
 	<!-- CBG ADD PHOTO TO BOOYAH -->
-	<div class="row">
-		<% @place.photos.each do |photo| %>
-			<div class="col-12 col-sm-2">
-					<% if photo.present? %>
-						<% if photo.picture.url.present? %>
-								<%= image_tag(photo.picture.url, width: "50%", height: "auto") %>
-						<% end %>
-						<blockquote>
-							<%= photo.caption %>
-						</blockquote>		
-					<% end %>
-			</div>
+	
+	<% @place.photos.each do |photo| %>
+		<% if photo.present? %>
+			<% if photo.picture.url.present? %>
+					<%= image_tag(photo.picture.url, width: "10%", height: "10%") %>
+					<%= photo.caption %>
+			<% end %>
+			<br />
 		<% end %>
-	</div>
+	<% end %>
 	
 
 	<br />
@@ -63,9 +59,9 @@
 			    <div class="modal-content">
 			      <div class="modal-header">
 			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			          <span aria-hidden="true">Ã—</span>
+			          <span aria-hidden="true">×</span>
 			        </button>
-			        <h4 class="modal-title" id="myModalLabel">Add a photo</h4>
+			        <h4 class="modal-title" id="myModalLabel">Add a comment</h4>
 			      </div>
 			      <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
 				      <div class="modal-body">
@@ -100,7 +96,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">Ã—</span>
+          <span aria-hidden="true">×</span>
         </button>
         <h4 class="modal-title" id="myModalLabel">Add a comment</h4>
       </div>
