@@ -23,24 +23,25 @@ body {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 }
 
- .navbar-brand .navbar-inverse {
+.navbar {
+  background: image_url('tactile_noise.png');
+  box-shadow: 0px 1px 3px #2a2a2a;
+  margin-bottom: 0;
+}
+
+.navbar-toggler {
+    border-color: rgb(255,102,203);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(9,55,244, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  color: #E3E85A;
+}
+
+ .navbar-inverse .navbar-brand  {
   color: #E3E85A;
   font-family: 'sinkin_sans300_light', sans-serif;
   font-size:26px;
-  margin-bottom: 0;
-}
-
-.navbar {
-  background: image_url('tactile_noise.png');
-  box-shadow: 10px 10px 5px #2a2a2a;
-  margin-bottom: 0;
-}
-
-.custom-toggler.navbar-toggler {
-    border-color: rgb(255,102,203);
-}
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(9,55,244, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .pagination {
